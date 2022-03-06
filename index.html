@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>Sound Identification Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div class="col-xs-12 header_div text-center">
+      <h2> Animal sound identifier </h2>
+      <h4>Note: Play different animal sounds like barking, chirping, roaring and meowing to see the animals who are making those sounds</h4>
+      <br>
+    </div>
+
+    <div id="main_div">
+      
+        <br>
+        <br>
+     
+      <button onclick="startClassification()" id="btn_1" class=" btn btn-info"> Start </button>
+        <br>
+      <h3 > I can hear- <span id="hear"></span></h3>
+      <h4> Accuracy: <span id="accuracy"></span></h4>
+      <br>
+      <br>
+      <img src="Ear png.jpg" id="ear_img" height="300" width="300" />
+   
+      
+    </div>
+
+
+    <div id="copyright">
+      <p> Developed by WhiteHat Jr</p>
+    </div>
+
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
